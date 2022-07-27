@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HackerUS</title>
+  </head>
+  <body>
+    <h1>HackerUS Best College!!</h1>
+    <h2>Moshe Yakobovitz</h2>
+    <br />
+    Test 1: <input type="number" id="t1" onchange="calculate()" />
+    <br />
+    Test 2: <input type="number" id="t2" value="18+6" onchange="calculate()" />
+    <br />
+    Test 3: <input type="number" id="t3" value="100" onchange="calculate()" />
+    <br />
+
+    <span id="result"></span>
+    <script>
+      function calculate() {
+        let sum = Number(t1.value) + Number(t2.value) + Number(t3.value);
+        let avg = sum / 3; //This is the average grade of the 3 tests
+
+        result.innerHTML = "<br /><b> The avrage grade is: " + sum / 3 + "</b>";
+      }
+      calculate();
+    </script>
+  </body>
+</html>

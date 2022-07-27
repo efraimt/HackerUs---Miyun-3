@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //----------------------
+      //==
+
+      let equal = 50 == 36; //false
+      equal = 12 == 12; //true
+
+      let gradeTlamidTov = 100;
+      let gradeTalmidAvcher = 90;
+      equal = gradeTalmidAvcher == gradeTlamidTov;
+
+      let isLessThan90 = gradeTalmidAvcher < 90; //false
+      let isGrade90OrLess = gradeTalmidAvcher <= 50 + 40; //true
+
+      //----------------------
+
+      //
+      /*
+        עובר מהמיון למורחב אם הציון מעל 56 או שהציון מעל 50 והסטודנט גר בצפון
+        */
+      let isGradeOver56 = true;
+      let isGradeOver50 = true;
+      let isStudentFromNorth = false;
+
+      let isPassed = isGradeOver56 || (isGradeOver50 && isStudentFromNorth);
+      isPassed = isGradeOver56 || (isGradeOver50 && isStudentFromNorth); // Exactly as above line
+
+      /*
+      עובר ציון מעל 56 ובתנאי שלא גר בצפון
+      */
+      isPassed = isGradeOver56 && isStudentFromNorth == false;
+
+      let x = 5 + 6 * 2; //17
+
+      document.write(isPassed);
+    </script>
+  </body>
+</html>
